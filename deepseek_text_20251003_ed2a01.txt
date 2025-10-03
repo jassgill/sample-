@@ -1,0 +1,11 @@
+pdf-mantra-website/
+├── index.html
+├── styles/
+│   └── style.css
+├── scripts/
+│   └── script.js
+├── assets/
+│   ├── images/
+│   │   └── favicon.ico
+│   └── icons/
+└── README.md

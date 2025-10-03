@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Mantra - 100% Free PDF Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header - iLovePDF style -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo" onclick="showHomePage(event)">
+                <div class="logo-text">PDF Mantra</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#tools" onclick="scrollToSection(event, 'tools')">All Tools</a></li>
+                <li><a href="#features" onclick="scrollToSection(event, 'features')">Features</a></li>
+                <li><a href="#categories" onclick="scrollToSection(event, 'categories')">Convert PDF</a></li>
+                <li><a href="#" onclick="showPricingInfo(event)">Pricing</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-login" onclick="showLoginForm(event)">Log In</a>
+                <a href="#" class="btn btn-signup" onclick="showSignupForm(event)">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Page Content -->
+    <div id="homePage">
+        <!-- Hero Section - iLovePDF style -->
+        <section class="hero">
+            <div class="hero-container">
+                <h1>Your PDF & Image Superpower</h1>
+                <p>All the tools you need to work with PDFs and images in one place. Every tool you need, at your fingertips. All are 100% FREE and easy to use!</p>
+                <div class="hero-buttons">
+                    <a href="#tools" class="btn btn-hero btn-white" onclick="scrollToSection(event, 'tools')">Select Files</a>
+                    <a href="#tools" class="btn btn-hero btn-transparent" onclick="scrollToSection(event, 'tools')">Explore Tools</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Grid - 5 columns layout -->
+        <section class="tools-section" id="tools">
+            <div class="tools-container">
+                <div class="section-title">
+                    <h2>All PDF & Image Tools</h2>
+                    <p>Merge, split, compress, convert, edit, and transform your PDFs and images with just a few clicks.</p>
+                </div>
+                
+                <!-- PDF Tools - 5 per row -->
+                <div class="section-title" style="margin-top: 60px; margin-bottom: 30px;">
+                    <h3 style="font-size: 24px;">PDF Tools</h3>
+                </div>
+                <div class="tools-grid">
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'merge')">
+                        <div class="tool-icon">
+                            <i class="fas fa-object-group"></i>
+                        </div>
+                        <h3>Merge PDF</h3>
+                        <p>Combine PDFs in the order you want</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'split')">
+                        <div class="tool-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Split PDF</h3>
+                        <p>Separate one page or a whole set</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'compress')">
+                        <div class="tool-icon">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                        </div>
+                        <h3>Compress PDF</h3>
+                        <p>Reduce file size while optimizing quality</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'organize')">
+                        <div class="tool-icon">
+                            <i class="fas fa-sort"></i>
+                        </div>
+                        <h3>Organize PDF</h3>
+                        <p>Rearrange, delete, or rotate pages</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'protect')">
+                        <div class="tool-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Protect PDF</h3>
+                        <p>Add password protection</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'unlock')">
+                        <div class="tool-icon">
+                            <i class="fas fa-unlock"></i>
+                        </div>
+                        <h3>Unlock PDF</h3>
+                        <p>Remove password from PDF</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'watermark')">
+                        <div class="tool-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Watermark PDF</h3>
+                        <p>Add text or image watermarks</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'number')">
+                        <div class="tool-icon">
+                            <i class="fas fa-sort-numeric-down"></i>
+                        </div>
+                        <h3>Number PDF</h3>
+                        <p>Add page numbers to your PDF</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'annotate')">
+                        <div class="tool-icon">
+                            <i class="fas fa-highlighter"></i>
+                        </div>
+                        <h3>Annotate PDF</h3>
+                        <p>Add comments and annotations</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'sign')">
+                        <div class="tool-icon">
+                            <i class="fas fa-signature"></i>
+                        </div>
+                        <h3>Sign PDF</h3>
+                        <p>Add digital signatures</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'fill')">
+                        <div class="tool-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3>Fill & Sign Forms</h3>
+                        <p>Complete PDF forms electronically</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'repair')">
+                        <div class="tool-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Repair PDF</h3>
+                        <p>Fix corrupted PDF files</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'compare')">
+                        <div class="tool-icon">
+                            <i class="fas fa-code-compare"></i>
+                        </div>
+                        <h3>Compare PDF</h3>
+                        <p>Find differences between PDFs</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'rotate')">
+                        <div class="tool-icon">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <h3>Rotate PDF</h3>
+                        <p>Rotate PDF pages to correct orientation</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'extract')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-export"></i>
+                        </div>
+                        <h3>Extract Pages</h3>
+                        <p>Extract specific pages from PDF</p>
+                    </a>
+                </div>
+
+                <!-- PDF Conversion Tools - 5 per row -->
+                <div class="section-title" style="margin-top: 60px; margin-bottom: 30px;">
+                    <h3 style="font-size: 24px;">PDF Conversion</h3>
+                </div>
+                <div class="tools-grid">
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'pdf-to-word')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <h3>PDF to Word</h3>
+                        <p>Convert PDF to editable Word documents</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'word-to-pdf')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Word to PDF</h3>
+                        <p>Convert Word documents to PDF</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'pdf-to-ppt')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-powerpoint"></i>
+                        </div>
+                        <h3>PDF to PowerPoint</h3>
+                        <p>Convert PDF to PPT presentations</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'ppt-to-pdf')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>PowerPoint to PDF</h3>
+                        <p>Convert PPT to PDF</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'pdf-to-excel')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <h3>PDF to Excel</h3>
+                        <p>Extract data from PDF to Excel</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'excel-to-pdf')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Excel to PDF</h3>
+                        <p>Convert Excel spreadsheets to PDF</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'pdf-to-txt')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>PDF to TXT</h3>
+                        <p>Extract text from PDF</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'txt-to-pdf')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>TXT to PDF</h3>
+                        <p>Convert text files to PDF</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'pdf-to-html')">
+                        <div class="tool-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>PDF to HTML</h3>
+                        <p>Convert PDF to web pages</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'html-to-pdf')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>HTML to PDF</h3>
+                        <p>Convert web pages to PDF</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'pdf-to-epub')">
+                        <div class="tool-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>PDF to EPUB</h3>
+                        <p>Convert PDF to eBook format</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'rtf-to-pdf')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>RTF to PDF</h3>
+                        <p>Convert Rich Text to PDF</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'pdf-to-csv')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-csv"></i>
+                        </div>
+                        <h3>PDF to CSV</h3>
+                        <p>Convert PDF tables to CSV format</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'csv-to-pdf')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>CSV to PDF</h3>
+                        <p>Convert CSV files to PDF</p>
+                    </a>
+
+                    <a href="#" class="tool-card" onclick="showToolInfo(event, 'pdf-to-xml')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <h3>PDF to XML</h3>
+                        <p>Convert PDF to XML format</p>
+                    </a>
+                </div>
+
+                <!-- Image Tools - 5 per row -->
+                <div class="section-title" style="margin-top: 60px; margin-bottom: 30px;">
+                    <h3 style="font-size: 24px;">Image Tools</h3>
+                </div>
+                <div class="tools-grid">
+                    <a href="#" class="tool-card image-tool" onclick="showToolInfo(event, 'jpg-to-pdf')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-image"></i>
+                        </div>
+                        <h3>JPG to PDF</h3>
+                        <p>Convert JPG images to PDF</p>
+                        <span class="image-badge">IMAGE TOOL</span>
+                    </a>
+
+                    <a href="#" class="tool-card image-tool" onclick="showToolInfo(event, 'pdf-to-jpg')">
+                        <div class="tool-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>PDF to JPG</h3>
+                        <p>Convert PDF pages to JPG images</p>
+                        <span class="image-badge">IMAGE TOOL</span>
+                    </a>
+
+                    <a href="#" class="tool-card image-tool" onclick="showToolInfo(event, 'png-to-pdf')">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-image"></i>
+                        </div>
+                        <h3>PNG to PDF</h3>
+                        <p>Convert PNG images to PDF</p>
+                        <span class="image-badge">IMAGE TOOL</span>
+                    </a>
+
+                    <a href="#" class="tool-card image-tool" onclick="showToolInfo(event, 'pdf-to-png')">
+                        <div class="tool-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>PDF to PNG</h3>
+                        <p>Convert PDF pages to PNG images</p>
+                        <span class="image-badge">IMAGE TOOL</span>
+                    </a>
+
+                    <a href="#" class="tool-card image-tool" onclick="showToolInfo(event, 'compress-image')">
+                        <div class="tool-icon">
+                            <i class="fas fa-compress"></i>
+                        </div>
+                        <h3>Compress Image</h3>
+                        <p>Reduce image file size</p>
+                        <span class="image-badge">IMAGE TOOL</span>
+                    </a>
+
+                    <a href="#" class="tool-card image-tool" onclick="showToolInfo(event, 'resize-image')">
+                        <div class="tool-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                        <h3>Resize Image</h3>
+                        <p>Change image dimensions</p>
+                        <span class="image-badge">IMAGE TOOL</span>
+                    </a>
+
+                    <a href="#" class="tool-card image-tool" onclick="showToolInfo(event, 'crop-image')">
+                        <div class="tool-icon">
+                            <i class="fas fa-crop"></i>
+                        </div>
+                        <h3>Crop Image</h3>
+                        <p>Crop images to desired size</p>
+                        <span class="image-badge">IMAGE TOOL</span>
+                    </a>
+
+                    <a href="#" class="tool-card image-tool" onclick="showToolInfo(event, 'rotate-image')">
+                        <div class="tool-icon">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <h3>Rotate Image</h3>
+                        <p>Rotate images to correct orientation</p>
+                        <span class="image-badge">IMAGE TOOL</span>
+                    </a>
+
+                    <a href="#" class="tool-card image-tool" onclick="showToolInfo(event, 'convert-image')">
+                        <div class="tool-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>Convert Image</h3>
+                        <p>Convert between image formats</p>
+                        <span class="image-badge">IMAGE TOOL</span>
+                    </a>
+
+                    <a href="#" class="tool-card image-tool" onclick="showToolInfo(event, 'watermark-image')">
+                        <div class="tool-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Watermark Image</h3>
+                        <p>Add watermarks to images</p>
+                        <span class="image-badge">IMAGE TOOL</span>
+                    </a>
+                </div>
+
+                <!-- AI Tools - 5 per row -->
+                <div class="section-title" style="margin-top: 60px; margin-bottom: 30px;">
+                    <h3 style="font-size: 24px;">AI Tools</h3>
+                </div>
+                <div class="tools-grid">
+                    <a href="#" class="tool-card ai-tool" onclick="showToolInfo(event, 'ai-summarize')">
+                        <div class="tool-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Summarize PDF</h3>
+                        <p>Generate summaries with AI</p>
+                        <span class="ai-badge">AI POWERED</span>
+                    </a>
+
+                    <a href="#" class="tool-card ai-tool" onclick="showToolInfo(event, 'ai-translate')">
+                        <div class="tool-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>AI Translate PDF</h3>
+                        <p>Translate PDF content with AI</p>
+                        <span class="ai-badge">AI POWERED</span>
+                    </a>
+
+                    <a href="#" class="tool-card ai-tool" onclick="showToolInfo(event, 'ai-edit')">
+                        <div class="tool-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3>AI Edit PDF</h3>
+                        <p>Edit PDF content with AI assistance</p>
+                        <span class="ai-badge">AI POWERED</span>
+                    </a>
+
+                    <a href="#" class="tool-card ai-tool" onclick="showToolInfo(event, 'ai-organize')">
+                        <div class="tool-icon">
+                            <i class="fas fa-sort"></i>
+                        </div>
+                        <h3>AI Organize PDF</h3>
+                        <p>Smart PDF organization with AI</p>
+                        <span class="ai-badge">AI POWERED</span>
+                    </a>
+
+                    <a href="#" class="tool-card ai-tool" onclick="showToolInfo(event, 'ai-ocr')">
+                        <div class="tool-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>AI OCR PDF</h3>
+                        <p>Extract text from scanned PDFs</p>
+                        <span class="ai-badge">AI POWERED</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section - 5 columns layout -->
+        <section class="categories" id="categories">
+            <div class="categories-container">
+                <div class="section-title">
+                    <h2>Convert to PDF</h2>
+                    <p>Easily convert any file to PDF format with our free online tools.</p>
+                </div>
+                <div class="categories-grid">
+                    <a href="#" class="category-card" onclick="showToolInfo(event, 'word-to-pdf')">
+                        <div class="category-icon">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <h3>Word to PDF</h3>
+                        <p>Convert DOC and DOCX files</p>
+                    </a>
+
+                    <a href="#" class="category-card" onclick="showToolInfo(event, 'ppt-to-pdf')">
+                        <div class="category-icon">
+                            <i class="fas fa-file-powerpoint"></i>
+                        </div>
+                        <h3>PowerPoint to PDF</h3>
+                        <p>Convert PPT and PPTX files</p>
+                    </a>
+
+                    <a href="#" class="category-card" onclick="showToolInfo(event, 'excel-to-pdf')">
+                        <div class="category-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <h3>Excel to PDF</h3>
+                        <p>Convert XLS and XLSX files</p>
+                    </a>
+
+                    <a href="#" class="category-card" onclick="showToolInfo(event, 'jpg-to-pdf')">
+                        <div class="category-icon">
+                            <i class="fas fa-file-image"></i>
+                        </div>
+                        <h3>JPG to PDF</h3>
+                        <p>Convert JPG images to PDF</p>
+                    </a>
+
+                    <a href="#" class="category-card" onclick="showToolInfo(event, 'txt-to-pdf')">
+                        <div class="category-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>TXT to PDF</h3>
+                        <p>Convert text files to PDF</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="features-container">
+                <div class="section-title">
+                    <h2>Why Choose PDF Mantra?</h2>
+                    <p>Discover the benefits of using our all-in-one PDF and image solution.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>100% Secure</h3>
+                        <p>Your files are protected with end-to-end encryption and automatically deleted after processing.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Fast Processing</h3>
+                        <p>Our optimized algorithms ensure quick processing of your files, saving you valuable time.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Works Everywhere</h3>
+                        <p>Access our tools from any device with a web browser - no installation required.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer - iLovePDF style -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h4>PDF Mantra</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" onclick="showHomePage(event)">Home</a></li>
+                            <li><a href="#tools" onclick="scrollToSection(event, 'tools')">All Tools</a></li>
+                            <li><a href="#features" onclick="scrollToSection(event, 'features')">Features</a></li>
+                            <li><a href="#" onclick="showPricingInfo(event)">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>PDF Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" onclick="showToolInfo(event, 'merge')">Merge PDF</a></li>
+                            <li><a href="#" onclick="showToolInfo(event, 'split')">Split PDF</a></li>
+                            <li><a href="#" onclick="showToolInfo(event, 'compress')">Compress PDF</a></li>
+                            <li><a href="#" onclick="showToolInfo(event, 'convert')">Convert PDF</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Image Tools</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" onclick="showToolInfo(event, 'jpg-to-pdf')">JPG to PDF</a></li>
+                            <li><a href="#" onclick="showToolInfo(event, 'compress-image')">Compress Image</a></li>
+                            <li><a href="#" onclick="showToolInfo(event, 'resize-image')">Resize Image</a></li>
+                            <li><a href="#" onclick="showToolInfo(event, 'convert-image')">Convert Image</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" onclick="showAboutInfo(event)">About Us</a></li>
+                            <li><a href="#" onclick="showContactInfo(event)">Contact</a></li>
+                            <li><a href="#" onclick="showPrivacyInfo(event)">Privacy Policy</a></li>
+                            <li><a href="#" onclick="showTermsInfo(event)">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 PDF Mantra. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Tool Info Page -->
+    <div id="toolInfoPage" class="tool-info">
+        <div class="tool-info-container">
+            <div class="tool-info-header">
+                <div class="tool-info-icon">
+                    <i class="fas fa-object-group"></i>
+                </div>
+                <h2 id="toolTitle">Merge PDF</h2>
+            </div>
+            <p class="tool-info-description" id="toolDescription">
+                Combine multiple PDF files into a single document in the order you prefer. Our tool preserves the original quality of your files.
+            </p>
+            <div class="tool-actions">
+                <a href="#" class="btn btn-login" onclick="showHomePage(event)">Back to Tools</a>
+                <a href="#" class="btn btn-signup" onclick="openToolModal(event)">Use This Tool</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tool Modal -->
+    <div id="toolModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Merge PDF</h3>
+                <button class="close-modal" onclick="closeToolModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h4>Select your files</h4>
+                    <p>Drag & drop files here or click to browse</p>
+                    <p style="font-size: 12px;">Maximum file size: 50MB</p>
+                </div>
+                <input type="file" id="fileInput" multiple style="display: none;">
+                
+                <div class="file-list" id="fileList">
+                    <!-- Files will be listed here -->
+                </div>
+                
+                <div class="tool-options" id="toolOptions">
+                    <!-- Tool-specific options will appear here -->
+                </div>
+                
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                
+                <div class="result-area" id="resultArea">
+                    <div class="result-success">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Your file is ready!</h4>
+                    </div>
+                    <p>Your processed file is ready for download.</p>
+                    <div class="tool-actions">
+                        <a href="#" class="btn btn-login" onclick="closeToolModal()">Close</a>
+                        <a href="#" class="btn btn-signup" id="downloadBtn">Download File</a>
+                    </div>
+                </div>
+                
+                <div class="tool-actions">
+                    <button class="btn btn-login" onclick="closeToolModal()">Cancel</button>
+                    <button class="btn btn-signup" onclick="processFiles()">Process Files</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
